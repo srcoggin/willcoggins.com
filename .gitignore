@@ -1,8 +1,12 @@
 # The master CV lives here and may contain contact details you don't want
-# published (phone, street address). THIS REPO IS PUBLIC — never commit it.
+# published (phone, street address). THIS REPO IS PUBLIC - never commit it.
 resume-source/
 
-# Only the scrubbed export at /resume.pdf is public.
+# Only the scrubbed export at /resume2026.pdf is public.
+
+# Working notes — kept on disk, deliberately not pushed.
+README.md
+DEPLOY.md
 
 # OS / editor noise
 Thumbs.db

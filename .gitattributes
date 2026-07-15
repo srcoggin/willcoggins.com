@@ -1,0 +1,17 @@
+# Force LF for text so the repo stays consistent across machines.
+* text=auto eol=lf
+
+# Binary files. Never let anything "normalise" line endings inside these —
+# stripping or adding carriage returns inside a deflate stream corrupts it, and
+# the file still opens but renders blank.
+*.pdf   binary
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.otf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.docx  binary

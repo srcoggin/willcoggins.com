@@ -76,7 +76,7 @@ html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   /* Decorative bits sit slightly outside the column; clip them or phones get
-     sideways scroll. Must be on <html> — body's overflow propagates to the
+     sideways scroll. Must be on <html> - body's overflow propagates to the
      viewport and body itself reverts to visible. */
   overflow-x: clip;
 }
@@ -95,7 +95,7 @@ body {
   transition: background-color 220ms ease, color 220ms ease;
 }
 
-/* Paper grain. SVG turbulence as a data URI — self-contained, no request. */
+/* Paper grain. SVG turbulence as a data URI - self-contained, no request. */
 body::before {
   content: "";
   position: fixed;
@@ -216,7 +216,6 @@ section { margin: 0 0 3rem; }
 .hero .role {
   margin: 0 0 1.6rem;
   font-family: var(--serif);
-  font-style: italic;
   font-size: 1.1875rem;
   line-height: 1.5;
   color: var(--ink-2);
@@ -226,7 +225,7 @@ section { margin: 0 0 3rem; }
 .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.85rem 1rem; margin: 0; }
 .link-rest { font-size: 0.9375rem; }
 
-/* Hand-drawn box — the irregular radius is the whole trick. */
+/* Hand-drawn box - the irregular radius is the whole trick. */
 .pen-box {
   display: inline-block;
   padding: 0.5rem 1.1rem;
@@ -304,7 +303,6 @@ section > h2::after {
 .what .org {
   margin: 0 0 0.7rem;
   font-family: var(--serif);
-  font-style: italic;
   font-size: 1rem;
   color: var(--accent);
 }
@@ -312,7 +310,7 @@ section > h2::after {
 .what > p:last-child { margin-bottom: 0; }
 .what .sub { color: var(--ink-3); font-size: 0.9375rem; }
 
-/* Skills line under a role — plain text, not pills. */
+/* Skills line under a role - plain text, not pills. */
 .kit {
   margin-top: 0.85rem !important;
   font-family: var(--mono);
@@ -322,14 +320,14 @@ section > h2::after {
 }
 
 /* Editorial two-column: dates live in the left margin on wide screens.
-   The column must clear the longest range ("Apr 2025 — Apr 2026") or nowrap
+   The column must clear the longest range ("Apr 2025 - Apr 2026") or nowrap
    drives the date straight into the job title. */
 @media (min-width: 46rem) {
   .entry { grid-template-columns: 9.5rem 1fr; }
   .when { text-align: right; padding-top: 0.42rem; margin-bottom: 0; }
 }
 
-/* ── The MMM aside — a note pinned inside the Meta entry ─────────────────── */
+/* ── The MMM aside - a note pinned inside the Meta entry ─────────────────── */
 
 .aside-note {
   margin: 1.15rem 0;
@@ -427,7 +425,7 @@ footer .contact { margin-bottom: 0.5rem; color: var(--ink-3); }
 
 @media (max-width: 34rem) {
   body { padding: 0 1.2rem; }
-  /* Clear the fixed theme toggle — at this width the name runs long enough
+  /* Clear the fixed theme toggle - at this width the name runs long enough
      to collide with it. */
   main { padding-top: 4.5rem; }
   .hero { margin-bottom: 2.5rem; }
@@ -436,12 +434,12 @@ footer .contact { margin-bottom: 0.5rem; color: var(--ink-3); }
   .entries { gap: 2.1rem; }
   .squiggle { margin-bottom: 2.25rem; }
   .pen-card { padding: 1.15rem 1.25rem; }
-  /* Straighten everything up — tilts read as broken at small sizes. */
+  /* Straighten everything up - tilts read as broken at small sizes. */
   .tilt-l, .tilt-r, .pen-box { transform: none; }
 }
 
 /* ==========================================================================
-   Print — Ctrl+P produces a clean CV.
+   Print - Ctrl+P produces a clean CV.
    Forced to light; the drawn decoration is screen-only.
    ========================================================================== */
 
@@ -488,7 +486,7 @@ footer .contact { margin-bottom: 0.5rem; color: var(--ink-3); }
   .prose p { font-size: 9pt; max-width: none; margin-bottom: 4pt; }
 
   .entries { gap: 7pt; }
-  /* Same constraint as on screen: must fit "Apr 2025 — Apr 2026" at 8pt mono. */
+  /* Same constraint as on screen: must fit "Apr 2025 - Apr 2026" at 8pt mono. */
   .entry { grid-template-columns: 88pt 1fr; gap: 0 10pt; }
   .when { font-size: 7.5pt; text-align: right; padding-top: 2pt; margin-bottom: 0; }
   .what > h3 { font-size: 10pt; }
@@ -502,7 +500,7 @@ footer .contact { margin-bottom: 0.5rem; color: var(--ink-3); }
   .aside-note p { font-size: 8.5pt; }
   .note-label { font-size: 8pt; margin-bottom: 1pt !important; }
 
-  /* Keep an entry whole — a job split across a page break is the exact
+  /* Keep an entry whole - a job split across a page break is the exact
      failure this stylesheet exists to prevent. */
   .entry, .skill, .pen-card { break-inside: avoid; page-break-inside: avoid; }
   h2, h3 { break-after: avoid; page-break-after: avoid; }
